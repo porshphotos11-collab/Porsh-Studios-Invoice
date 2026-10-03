@@ -20,7 +20,7 @@ Taxes are calculated and displayed separately as NHIL, GETFund and VAT. Their pe
 
 Each invoice item supports a number of days and a daily rate. The line amount is calculated automatically. VAT invoicing can be switched off for an invoice, which removes NHIL, GETFund and VAT from both the calculation and the exported invoice.
 
-Bank and Mobile Money payment details are editable and saved locally with the invoice draft.
+Bank and Mobile Money payment details are editable and saved locally with the invoice draft. They are presented in separate Bank Details and Mobile Money sections on the exported document.
 
 The document type can be switched between invoice and receipt. Receipt mode updates the document wording and hides invoice-only due-date and payment-term details in the exported PDF.
 

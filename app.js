@@ -25,12 +25,8 @@ const defaultInvoice = {
   accountNumber: "1231130012345",
   accountCurrency: "GHS",
   momoProvider: "Mobile Money",
-  momoName: "Porsh Studios",
+  momoName: "Ebenezer Eyimah",
   momoNumber: "0242743356",
-  payeeName: "Porsh Studios",
-  payeeAddress: "Accra, Ghana",
-  email: "hello@porshstudios.com",
-  phone: "+233 24 123 4567",
   terms: STANDARD_TERMS,
   items: [
     { description: "Cameras and Lenses", days: 1, dailyRate: 1500 },
@@ -59,6 +55,7 @@ function loadInvoice() {
     const invoice = saved ? { ...structuredClone(defaultInvoice), ...saved } : structuredClone(defaultInvoice);
     if (!String(invoice.currencySymbol || "").trim()) invoice.currencySymbol = "GH₵";
     if (!String(invoice.terms || "").trim()) invoice.terms = STANDARD_TERMS;
+    if (invoice.momoName === "Porsh Studios") invoice.momoName = "Ebenezer Eyimah";
     invoice.vatEnabled = invoice.vatEnabled !== false;
     invoice.items = Array.isArray(invoice.items) ? invoice.items.map(normalizeItem) : structuredClone(defaultInvoice.items);
     return invoice;
@@ -408,5 +405,5 @@ if ("serviceWorker" in navigator && location.protocol !== "file:") {
   navigator.serviceWorker.addEventListener("controllerchange", () => {
     showToast("The app has been updated. Your current invoice is safe.");
   });
-  navigator.serviceWorker.register("sw.js?v=10").then((registration) => registration.update());
+  navigator.serviceWorker.register("sw.js?v=11").then((registration) => registration.update());
 }

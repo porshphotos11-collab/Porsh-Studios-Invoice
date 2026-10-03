@@ -218,8 +218,6 @@ small { color: var(--muted); display: block; margin-top: -7px; margin-bottom: 12
 .details-list > div { display: grid; grid-template-columns: 96px 1fr; }
 .details-list dt { font-weight: 750; }
 .details-list dd { margin: 0; }
-.details-list .payment-subheading { margin-top: 5px; color: var(--purple); text-transform: uppercase; }
-.details-list .payment-subheading dt { grid-column: 1 / -1; }
 .invoice-footer ul { margin: 0; padding-left: 14px; }
 
 .toast { position: fixed; right: 20px; bottom: 20px; z-index: 50; max-width: 340px; padding: 12px 15px; border-radius: 8px; background: #1b1322; color: white; box-shadow: 0 8px 28px rgba(0,0,0,.25); font-size: 13px; opacity: 0; transform: translateY(8px); pointer-events: none; transition: .2s ease; }

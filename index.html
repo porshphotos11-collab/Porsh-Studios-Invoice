@@ -7,7 +7,7 @@
     <meta name="description" content="Create and export PORSH Studios invoices as PDF." />
     <title>PORSH Invoice Generator</title>
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
   </head>
   <body>
     <header class="app-bar no-print">
@@ -105,11 +105,7 @@
           </details>
 
           <details open>
-            <summary>Contact & terms</summary>
-            <label>Payee / business name<input name="payeeName" type="text" /></label>
-            <label>Location<input name="payeeAddress" type="text" /></label>
-            <label>Email<input name="email" type="email" /></label>
-            <label>Phone<input name="phone" type="tel" /></label>
+            <summary>Terms & conditions</summary>
             <label>Terms & conditions<textarea name="terms" rows="6" aria-describedby="termsHint"></textarea></label>
             <small id="termsHint">Enter one term per line. Standard terms return for each new invoice.</small>
             <button class="button button-restore" id="restoreTermsButton" type="button">Restore standard terms</button>
@@ -191,24 +187,21 @@
 
             <footer class="invoice-footer">
               <div>
-                <h3>PAYMENT DETAILS</h3>
+                <h3>BANK DETAILS</h3>
                 <dl class="details-list">
                   <div><dt>Bank Name:</dt><dd data-preview="bankName"></dd></div>
                   <div><dt>Account Name:</dt><dd data-preview="accountName"></dd></div>
                   <div><dt>Account Number:</dt><dd data-preview="accountNumber"></dd></div>
                   <div><dt>Currency:</dt><dd data-preview="accountCurrency"></dd></div>
-                  <div class="payment-subheading"><dt>Mobile Money</dt><dd></dd></div>
+                </dl>
+              </div>
+              <div>
+                <h3>MOBILE MONEY</h3>
+                <dl class="details-list">
                   <div><dt>Provider:</dt><dd data-preview="momoProvider"></dd></div>
                   <div><dt>MoMo Name:</dt><dd data-preview="momoName"></dd></div>
                   <div><dt>MoMo Number:</dt><dd data-preview="momoNumber"></dd></div>
                 </dl>
-              </div>
-              <div>
-                <h3>PLEASE MAKE PAYMENT TO</h3>
-                <p data-preview="payeeName"></p>
-                <p data-preview="payeeAddress"></p>
-                <p data-preview="email"></p>
-                <p data-preview="phone"></p>
               </div>
               <div>
                 <h3>TERMS & CONDITIONS</h3>
@@ -221,6 +214,6 @@
     </main>
 
     <div class="toast no-print" id="toast" role="status" aria-live="polite"></div>
-    <script src="app.js?v=10"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>
