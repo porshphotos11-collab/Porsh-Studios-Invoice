@@ -405,5 +405,5 @@ if ("serviceWorker" in navigator && location.protocol !== "file:") {
   navigator.serviceWorker.addEventListener("controllerchange", () => {
     showToast("The app has been updated. Your current invoice is safe.");
   });
-  navigator.serviceWorker.register("sw.js?v=11").then((registration) => registration.update());
+  navigator.serviceWorker.register("sw.js?v=12").then((registration) => registration.update());
 }

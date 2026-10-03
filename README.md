@@ -24,6 +24,8 @@ Bank and Mobile Money payment details are editable and saved locally with the in
 
 The document type can be switched between invoice and receipt. Receipt mode updates the document wording and hides invoice-only due-date and payment-term details in the exported PDF.
 
+The exported document carries the PORSH Studios slogan, “Architects Of Aspiration,” as an italic footer signature.
+
 ## Supported devices
 
 - macOS and Windows desktop browsers
