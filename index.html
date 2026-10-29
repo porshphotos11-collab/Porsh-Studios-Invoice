@@ -7,7 +7,7 @@
     <meta name="description" content="Create and export PORSH Studios invoices as PDF." />
     <title>PORSH Invoice Generator</title>
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.css?v=14" />
+    <link rel="stylesheet" href="styles.css?v=15" />
   </head>
   <body>
     <header class="app-bar no-print">
@@ -41,6 +41,7 @@
               <label>Document type
                 <select name="documentType">
                   <option value="invoice">Invoice</option>
+                  <option value="proFormaInvoice">Pro Forma Invoice</option>
                   <option value="receipt">Receipt</option>
                 </select>
               </label>
@@ -127,7 +128,6 @@
               <span class="logo-slice logo-studios"><img src="PORSH%20logo-01.png" alt="" /></span>
             </div>
             <div class="invoice-title">
-              <span class="pro-forma-label invoice-only">PRO FORMA</span>
               <h2 id="documentTitle">INVOICE</h2>
               <strong data-preview="invoiceNumber"></strong>
             </div>
@@ -216,6 +216,6 @@
     </main>
 
     <div class="toast no-print" id="toast" role="status" aria-live="polite"></div>
-    <script src="app.js?v=14"></script>
+    <script src="app.js?v=15"></script>
   </body>
 </html>

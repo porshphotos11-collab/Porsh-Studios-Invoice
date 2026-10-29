@@ -165,7 +165,6 @@ small { color: var(--muted); display: block; margin-top: -7px; margin-bottom: 12
   align-items: start;
   background: linear-gradient(110deg, #f6f0ea 0%, #f3ece5 70%, #f7f2ed 100%);
 }
-.invoice-header:has(.pro-forma-label:not([hidden])) { grid-template-columns: 1fr 250px; }
 .invoice-brand-logo { width: 264px; height: 65px; display: flex; align-items: center; gap: 6px; margin-top: 1px; }
 .logo-slice { position: relative; display: block; height: 65px; overflow: hidden; flex: 0 0 auto; }
 .logo-slice img { position: absolute; max-width: none; object-fit: contain; }
@@ -177,8 +176,6 @@ small { color: var(--muted); display: block; margin-top: -7px; margin-bottom: 12
 .logo-studios { width: 127px; }
 .logo-studios img { left: -182.9px; }
 .invoice-title { text-align: right; color: var(--purple); padding-top: 8px; }
-.invoice-title:has(.pro-forma-label:not([hidden])) { text-align: left; }
-.pro-forma-label { display: block; margin-bottom: 3px; font-size: 30px; font-weight: 800; letter-spacing: .07em; white-space: nowrap; }
 .invoice-title h2 { margin: 0 0 10px; font-size: 30px; letter-spacing: .07em; }
 .invoice-title strong { display: block; color: #191622; font-size: 16px; white-space: nowrap; }
 

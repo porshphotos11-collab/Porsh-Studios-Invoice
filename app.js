@@ -93,7 +93,7 @@ function renderItemEditor() {
 
 function renderPreview() {
   const isReceipt = state.documentType === "receipt";
-  document.querySelector("#documentTitle").textContent = isReceipt ? "RECEIPT" : "INVOICE";
+  document.querySelector("#documentTitle").textContent = isReceipt ? "RECEIPT" : state.documentType === "proFormaInvoice" ? "PRO FORMA" : "INVOICE";
   document.querySelector("#documentNumberFieldLabel").textContent = isReceipt ? "Receipt number" : "Invoice number";
   document.querySelector("#documentDateLabel").textContent = isReceipt ? "RECEIPT DATE" : "INVOICE DATE";
   document.querySelector("#billToLabel").textContent = isReceipt ? "RECEIVED FROM" : "BILL TO";
@@ -405,5 +405,5 @@ if ("serviceWorker" in navigator && location.protocol !== "file:") {
   navigator.serviceWorker.addEventListener("controllerchange", () => {
     showToast("The app has been updated. Your current invoice is safe.");
   });
-  navigator.serviceWorker.register("sw.js?v=14").then((registration) => registration.update());
+  navigator.serviceWorker.register("sw.js?v=15").then((registration) => registration.update());
 }
