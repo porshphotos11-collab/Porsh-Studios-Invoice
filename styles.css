@@ -177,6 +177,8 @@ small { color: var(--muted); display: block; margin-top: -7px; margin-bottom: 12
 .logo-studios img { left: -182.9px; }
 .invoice-title { text-align: right; color: var(--purple); padding-top: 8px; }
 .invoice-title h2 { margin: 0 0 10px; font-size: 30px; letter-spacing: .07em; }
+.invoice-title.pro-forma-mode { display: flex; flex-direction: column; align-items: flex-end; }
+.invoice-title.pro-forma-mode h2 { white-space: pre-line; text-align: left; }
 .invoice-title strong { display: block; color: #191622; font-size: 16px; white-space: nowrap; }
 
 .invoice-body { padding: 30px 46px 0; }
